@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func maprip(m *map[string]int) {
+func maprip(m *map[string]int) { //m is the pointer to a map
 
 	*m = map[string]int{
 		"fakevalue": 100}
