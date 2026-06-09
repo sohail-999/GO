@@ -5,7 +5,7 @@ import "fmt"
 func replaceMap(m *map[string]int) {
 
 	*m = map[string]int{
-		" x": 999}
+		" x": 99}
 	// replaces the entire map
 }
 
