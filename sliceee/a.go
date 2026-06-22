@@ -8,11 +8,11 @@ func main() {
 
 	var array [5]int
 	array = [5]int{1, 2, 3, 4, 5}
-	fmt.Println("array length:", len(array), "capacity:", cap(array))
+	fmt.Println("Array length:", len(array), "Capacity:", cap(array))
 	fmt.Printf("array : \n%p", &array)
 
 	slice := array[1:5]
-	fmt.Println("\n Original slice:", slice)
+	fmt.Println("\nOriginal slice:", slice)
 	fmt.Println("Slice length:", len(slice), "Capacity:", cap(slice))
 	fmt.Printf("Slice ptr: %p\n", &slice[0])
 
