@@ -4,15 +4,15 @@ import "fmt"
 
 func main() {
 
-	fruitsprice := map[string]int{ //string is key type and int is the value type
+	fruitsprices := map[string]int{ //string is key type and int is the value type
 
-		"apple":      50,
-		"banana":     20,
-		"grape":      90,
-		"watermelon": 100,
+		"Apple":      50,
+		"Banana":     20,
+		"Grapes":     90,
+		"Watermelon": 100,
 	}
 
-	fmt.Println(fruitsprice)
+	fmt.Println(fruitsprices)
 }
 
 //and map is works like table which is hash table
