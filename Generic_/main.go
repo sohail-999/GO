@@ -15,8 +15,12 @@ func printslice[T any](items []T) {
 }
 func main() {
 
-	names := []bool{ //here we specify the type
-		true, false}
+	//names := []bool{ //here we specify the type
+	//true, false}
+	names := []string{
+
+		"Go", "Language",
+	}
 
 	printslice(names)
 
