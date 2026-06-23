@@ -4,15 +4,15 @@ import (
 	"fmt"
 )
 
-func multiply(a int, b int) (mul int, div int) {
+func multiply(a int, b int) (mul int, div float64) {
 	mul = a * b
-	div = a / b
-	return
+	div = float64(a) / float64(b)
+	return //return current values
 }
 
 func main() {
-	multiple, divide := multiply(25, 5)
+	multiple, divide := multiply(25, 4)
 
 	fmt.Println("the multiplication :", multiple)
-	fmt.Println("the division :", divide)
+	fmt.Println("the division :", divide) //gives float result
 }
