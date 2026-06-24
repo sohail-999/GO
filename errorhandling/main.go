@@ -10,7 +10,7 @@ func main() {
 
 	if err != nil {
 		fmt.Println("Error:", err) //if the file does not exists its gonna print
-
+		return
 	}
 
 	fmt.Println("File opened successfully:", file.Name()) //if the file exists in the folder it this gonna print
