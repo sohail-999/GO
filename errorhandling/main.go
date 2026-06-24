@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("Daata.txt") //the os allows to interact with opearting system
+	file, err := os.Open("Data.txt") //the os allows to interact with opearting system
 
 	if err != nil {
 		fmt.Println("Error:", err) //if the file does not exists its gonna print
