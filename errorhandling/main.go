@@ -9,7 +9,7 @@ func main() {
 	file, err := os.Open("Data.txt")
 
 	if err != nil {
-		fmt.Println("Error:", err)
+		fmt.Println("Error:", err) //if the file does not exists its gonna print
 		return
 	}
 
