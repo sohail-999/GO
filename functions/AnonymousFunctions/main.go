@@ -10,8 +10,8 @@ func main() {
 
 		fmt.Println(counter)
 	}
-	increment()
-	increment()
-	increment()
-	increment()
+	increment() //prints 1
+	increment() //prints 2
+	increment() //prints 3
+	increment() //prints 4
 }
