@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	counter := 0
+	var counter int = 0 // also counter := 0
 	increment := func() {
 
 		counter++
