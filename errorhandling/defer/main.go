@@ -29,5 +29,5 @@ func main() {
 		fmt.Println("Error:", err)
 		return
 	}
-	fmt.Println("Bytes written:", written)
+	fmt.Println("Bytes written:", written) //prints the bytes of the file
 }
