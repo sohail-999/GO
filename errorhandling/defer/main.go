@@ -12,13 +12,13 @@ func Copyfile(srcName, dstName string) (written int64, err error) {
 		return
 
 	}
-	defer src.Close()
+	defer src.Close() //closes the file
 	dst, err := os.Create(dstName)
 	if err != nil {
 		return
 	}
 
-	defer dst.Close()
+	defer dst.Close() //closes the file
 	return io.Copy(dst, src)
 
 }
