@@ -10,8 +10,8 @@ func main() {
 	ch := make(chan int) //creating an unbufferred channel
 	close(ch)            //closing the channel
 
-	value, ok := <-ch
-	fmt.Println(value, ok)
+	res, ok := <-ch      //receives the close channel
+	fmt.Println(res, ok) //
 
 	// // A goroutine to send a value.
 	/*go func() {
