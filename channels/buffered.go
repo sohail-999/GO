@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	ch := make(chan int, 3)
-	go func() {
+	ch := make(chan int, 3) //making a buffered channel
+	go func() {             //a go routine with a receiver channel
 
 		fmt.Println("gorutine : waiting the value:")
 		fmt.Println("now", <-ch)
