@@ -9,14 +9,14 @@ import (
 var balance int
 var mutex sync.Mutex
 
-func deposit(amount int) {
+func deposit(amount int) { //deposit function
 	mutex.Lock()
 	defer mutex.Unlock()
 	balance += amount
 	fmt.Printf("Deposited $%d. New balance: $%d\n", amount, balance)
 }
 
-func withdraw(amount int) {
+func withdraw(amount int) { //withdraw function
 	mutex.Lock()
 	defer mutex.Unlock()
 	if balance >= amount {
@@ -33,5 +33,5 @@ func main() {
 	go withdraw(300)
 	go deposit(500)
 
-	time.Sleep(10 * time.Second) // Allow goroutines to finish before exiting
+	time.Sleep(time.Second * 10) // Allow goroutines to finish before exiting
 }
