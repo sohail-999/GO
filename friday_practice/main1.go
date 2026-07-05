@@ -83,6 +83,6 @@ func main() {
 			Country: "Pakistan",
 		},
 	}
-	fmt.Println("Our Employee Details:\n", employeedata.Name, "\n", employeedata.Designation, "\n", employeedata.Salary, "\n", employeedata.Street, "\n", employeedata.Address.Country)
+	fmt.Println("Our Employee Details:\n", employeedata.Name, "\n", employeedata.Designation, "\n", employeedata.Salary, "\n", employeedata.Street, "\n", employeedata.Address.City, "\n", employeedata.Address.Country)
 
 }
