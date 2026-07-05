@@ -1,6 +1,6 @@
 //@ Appending the element into the Array through the slice
 
-package main
+/*package main
 
 import (
 	"fmt"
@@ -18,3 +18,4 @@ func main() {
 	fmt.Println("Slice after the Appending the int values:\n", slicenew)
 	fmt.Println("###Now the Array becomes:###", array)
 }
+*/
