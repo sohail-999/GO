@@ -20,7 +20,8 @@ func main() {
 
 	//fmt.Println(err.Error())
 	originalerror := errors.New("original error")
-	wrappederror := fmt.Errorf("additional information %w", originalerror)
+	wrappederror := fmt.Errorf("additional information %w", originalerror) //providing richer context about the errors
+	fmt.Println(originalerror)
 	fmt.Println(wrappederror)
 	//if errors.Is(wrappederror, originalerror) {
 	//	fmt.Println("the wrapped contain the original...")
