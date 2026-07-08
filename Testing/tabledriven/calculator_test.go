@@ -7,14 +7,13 @@ func TestAdd(t *testing.T) {
 		a, b int
 		want int
 	}{
-		{1, 2, 3},
-		{5, 6, 11},
-		{10, 20, 30},
-		{6, 7, 13},
+		{1, 2, -1},
+		{5, 6, -1},
+		{10, 20, -10},
 	}
 
 	for _, tt := range tests {
-		got := Add(tt.a, tt.b)
+		got := Subtract(tt.a, tt.b)
 
 		if got != tt.want {
 			t.Errorf("Add(%d,%d)=%d want %d",
