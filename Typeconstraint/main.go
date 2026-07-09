@@ -17,9 +17,10 @@ func main() {
 	Print(3.14)
 
 	a, b := Swap(7, 6)
-	fmt.Println(a, b) //Output: 2 1
+	fmt.Println(a, b) //Output: 6 7
 
 	x, y := Swap("Go", "Language")
-	fmt.Println(x, y) //Output: Lang Go
-
+	fmt.Println(x, y) //Output: Language Go
+	m, n := Swap("seveeen", "sixxxx")
+	fmt.Println(m, n)
 }
