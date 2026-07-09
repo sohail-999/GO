@@ -1,6 +1,6 @@
-//package main
+package main
 
-/*import "fmt"
+import "fmt"
 
 func Print[T any](value T) { //T is a type parameter that can be any type
 	fmt.Println(value)
@@ -16,13 +16,10 @@ func main() {
 	Print("Hello")
 	Print(3.14)
 
-	a, b := Swap(1, 2)
+	a, b := Swap(7, 6)
 	fmt.Println(a, b) //Output: 2 1
 
-	x, y := Swap("Go", "Lang")
+	x, y := Swap("Go", "Language")
 	fmt.Println(x, y) //Output: Lang Go
 
 }
-*/
-
-package main
