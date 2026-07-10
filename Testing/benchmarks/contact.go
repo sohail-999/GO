@@ -1,6 +1,6 @@
 package contact
 
-func joinstrings(str []string) string {
+func Joinstrings(str []string) string {
 	var result string
 	for _, s := range str {
 		result += s
