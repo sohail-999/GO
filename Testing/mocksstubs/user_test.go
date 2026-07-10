@@ -14,7 +14,7 @@ func TestRegister(t *testing.T) {
 
 	service := NewUserService(stub)
 
-	err := service.Register("john@example.com")
+	err := service.Register("alice@example.com")
 
 	if err != nil {
 		t.Fatal(err)
