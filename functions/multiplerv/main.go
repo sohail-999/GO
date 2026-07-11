@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-func mutiplerv(a int, b int) (int, float64) {
+func mutiplerv(a int, b int) (int, bool) {
 	sum := a + b
-	return sum, 6.777777
+	return sum, true
 }
 func main() {
 
