@@ -30,7 +30,7 @@ func (f *Foo) Second(printSecond func()) {
 	// Do not change this line
 	printSecond()
 
-	close(f.secondDone)
+	close(f.secondDone) //closing
 }
 
 func (f *Foo) Third(printThird func()) {
