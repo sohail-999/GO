@@ -21,7 +21,7 @@ func (f *Foo) First(printFirst func()) {
 	// Do not change this line
 	printFirst()
 
-	close(f.firstDone)
+	close(f.firstDone) //closing
 }
 
 func (f *Foo) Second(printSecond func()) {
