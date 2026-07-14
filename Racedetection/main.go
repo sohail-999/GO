@@ -1,21 +1,30 @@
+//@race detection(we can say that when the data race happens) in which 1.two gorountines accesses the same variable 2.no synchronization
+
 package main
 
 import (
 	"fmt"
-	"time"
+	"sync"
 )
 
 var counter int
+var mu sync.Mutex
 
-func increment() {
+func increment(wg *sync.WaitGroup) {
+	defer wg.Done()
 	for i := 0; i < 1000; i++ {
+		mu.Lock()
 		counter++
+		mu.Unlock()
 	}
 }
 func main() {
-
-	go increment()
-	go increment()
-	time.Sleep(time.Second)
+	var wg sync.WaitGroup
+	wg.Add(2)
+	go increment(&wg)
+	go increment(&wg)
+	wg.Wait()
+	//	time.Sleep(time.Second)
 	fmt.Println(counter)
+
 }
