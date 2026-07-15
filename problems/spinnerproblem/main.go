@@ -19,7 +19,7 @@ func spinner(delay time.Duration) {
 		}
 	}
 }
-func fib(x int) int {
+func fib(x int) int { //fibonnaci formula
 	if x < 2 {
 		return x
 	}
