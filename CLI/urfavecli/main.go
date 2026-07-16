@@ -11,7 +11,7 @@ import (
 func main() {
 	app := cli.NewApp()
 
-	app.Name = "My New CLI Application"
+	app.Name = "My New CLI Application" //name
 	app.Action = (func(ctx *cli.Context) error {
 		fmt.Println("app launched")
 		return nil
