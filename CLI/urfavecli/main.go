@@ -17,7 +17,7 @@ func main() {
 		return nil
 
 	})
-	err := app.Run(os.Args)
+	err := app.Run(os.Args) //for accepting the arg from the terminal
 	if err != nil {
 
 		log.Fatal(err)
