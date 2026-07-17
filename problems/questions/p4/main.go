@@ -8,8 +8,8 @@ package main
 import "fmt"
 
 func circumferenceandarea(r float64) {
-	fmt.Println("Circumference:", 2*3.14*r)
-	fmt.Println("Area:", 3.14*r*r)
+	fmt.Println("Circumference:", 2*3.14*r) //formula (2*pi*radius)
+	fmt.Println("Area:", 3.14*r*r)          //formula(pi*r^2)
 
 }
 
