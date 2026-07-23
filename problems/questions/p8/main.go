@@ -8,8 +8,8 @@ import "fmt"
 
 func totalandavg(a, b, c, d, e int) {
 
-	total, average := fmt.Println("total:", a+b+c+d+e, "average:", (a+b+c+d+e)/5)
-	fmt.Println(total, average)
+	fmt.Println(" Total:", a+b+c+d+e, "\n", "Average", (a+b+c+d+e)/5)
+
 }
 
 func main() {
