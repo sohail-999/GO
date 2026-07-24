@@ -7,13 +7,14 @@ package main
 
 import "fmt"
 
-func convertor(a int) {
-	fmt.Println("Seconds:\n", a)
-	fmt.Println("Seconds into Minutes:\n", a/60, "minutes")
-	fmt.Println("Seconds into hours:\n", a/3600, "hours")
-
-}
+//func convertor(a int) {
+//	fmt.Println("Seconds:\n",a)
+//}
 
 func main() {
-	convertor(3600)
+	var a uint
+	fmt.Println("Write the Seconds:")
+	fmt.Scan(&a)
+	fmt.Println("Seconds into Minutes:\n", a/60, "minutes")
+	fmt.Println("Seconds into hours:\n", a/3600, "hours")
 }
