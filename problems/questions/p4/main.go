@@ -14,5 +14,5 @@ func circumferenceandarea(radius float64) {
 }
 
 func main() {
-	circumferenceandarea(7)
+	circumferenceandarea(3.1)
 }
