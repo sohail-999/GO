@@ -8,7 +8,7 @@ import "fmt"
 func main() {
 
 	var a, b, c int
-	fmt.Println("Please enter the number:")
+	fmt.Println("Please enter the numbers:")
 
 	fmt.Scan(&a, &b, &c)
 
