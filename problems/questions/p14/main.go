@@ -13,15 +13,15 @@ func main() {
 	fmt.Scan(&year)
 	leapyear := year
 
-	if leapyear%4 == 0 {
-		leapyear = year
+	if leapyear%4 == 0 && leapyear%100 != 0 {
+		fmt.Println("this is a leap year")
 		//fmt.Printf("%v is a leap year\n", year)
 
 	}
 	if leapyear%4 == 0 && leapyear%100 == 0 && leapyear%400 == 0 {
 		leapyear = year
+		fmt.Printf("YES , %v is a leapyear\n", leapyear)
 		//fmt.Printf("%v is leap year\n", year)
 	}
-	fmt.Printf("YES , %v is a leapyear\n", leapyear)
 
 }
