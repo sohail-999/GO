@@ -9,7 +9,7 @@ import "fmt"
 func main() {
 
 	var year int
-	fmt.Println("Please enter the number:")
+	fmt.Println("Please enter the year:")
 	fmt.Scan(&year)
 	leapyear := year
 
