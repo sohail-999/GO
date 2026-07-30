@@ -8,14 +8,14 @@ import "fmt"
 
 func main() {
 	//var v1, v2, v3, v4, v5 rune
-	var v rune
+	var vowel rune
 	fmt.Println("Please enter a charactor")
-	fmt.Scan(&v)
-	if v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u' ||
-		v == 'A' || v == 'E' || v == 'I' || v == 'O' || v == 'U' {
-		fmt.Printf("%v is a vowel /n", v)
+	fmt.Scan(&vowel)
+	if vowel == 'a' || vowel == 'e' || vowel == 'i' || vowel == 'o' || vowel == 'u' ||
+		vowel == 'A' || vowel == 'E' || vowel == 'I' || vowel == 'O' || vowel == 'U' {
+		fmt.Printf("%v is a vowel\n", vowel)
 	} else {
-		fmt.Printf("%v is not a vowel \n", v)
+		fmt.Printf("%v is not a vowel\n", vowel)
 	}
 	//	vowels := 'a', 'e', 'i', 'o', 'u'
 
