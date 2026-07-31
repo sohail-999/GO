@@ -7,7 +7,12 @@ import "fmt"
 
 func main() {
 	var character rune
-	fmt.Println("Please enter a  charactor:")
+	fmt.Println(" ⣴⠶⢦⣤⠶⠶⣄⠀")
+	fmt.Println(" ⣇⠀⠀    ⣿⠀⠀⠀⠀")
+	fmt.Println(" ⠙⢧⣄⠀⣠⠞⠁⠀⠀")
+	fmt.Println("     ⠉")
+
+	fmt.Println("Please enter a  charactor my ١٥٧٤♡:")
 	fmt.Scanf("%c", &character)
 	if (character >= 'A' && character <= 'Z') || (character >= 'a' && character <= 'z') {
 		fmt.Printf("%c is a Alphabet\n", character)
