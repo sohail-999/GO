@@ -7,22 +7,15 @@ package main
 import "fmt"
 
 func main() {
-	//var v1, v2, v3, v4, v5 rune
 	var vowel rune
-	fmt.Println("Please enter a charactor")
-	fmt.Scan(&vowel)
+
+	fmt.Println("Please enter a character:")
+	fmt.Scanf("%c", &vowel)
+
 	if vowel == 'a' || vowel == 'e' || vowel == 'i' || vowel == 'o' || vowel == 'u' ||
 		vowel == 'A' || vowel == 'E' || vowel == 'I' || vowel == 'O' || vowel == 'U' {
-		fmt.Printf("%v is a vowel\n", vowel)
+		fmt.Printf("%c is a vowel\n", vowel)
 	} else {
-		fmt.Printf("%v is not a vowel\n", vowel)
+		fmt.Printf("%c is not a vowel\n", vowel)
 	}
-	//	vowels := 'a', 'e', 'i', 'o', 'u'
-
-	/*v2 = 'e'
-	v3 = 'i'
-	v4 = 'o'
-	v5 = 'u'*/
-	//if v==a,e,i
-
 }
