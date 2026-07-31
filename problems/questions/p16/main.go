@@ -11,8 +11,7 @@ func main() {
 	fmt.Scanf("%c", &character)
 	if (character >= 'A' && character <= 'Z') || (character >= 'a' && character <= 'z') {
 		fmt.Printf("%c is a Alphabet\n", character)
-	}
-	if character >= '0' && character <= '9' {
+	} else if character >= '0' && character <= '9' {
 
 		fmt.Printf("%c is a Digit\n", character)
 	} else {
